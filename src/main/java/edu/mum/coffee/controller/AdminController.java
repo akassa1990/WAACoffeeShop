@@ -213,6 +213,7 @@ public class AdminController {
 		p.setLastName(pc.getLastName());
 		p.setEmail(pc.getEmail());
 		p.setPhone(pc.getPhone());
+		
 		System.out.println("Created person: "+p.getFirstName());
 		
 		User user = userService.findByUsername(p.getEmail());
