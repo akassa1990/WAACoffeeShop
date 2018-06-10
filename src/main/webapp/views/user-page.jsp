@@ -32,9 +32,9 @@
 	<h2><a href="<c:url value="/logout" />" class="badge badge-primary"> Logout </a></h2>
 
   
-    <h5 class="card-title">Welcome to Our Coffee Shop</h5>
+    <!-- <h5 class="card-title">Welcome to Our Coffee Shop</h5>
     <p class="card-text">Customer Is Always Right</p>
-    <a href="#" class="btn btn-primary">Go to Login Page</a>
+    <a href="#" class="btn btn-primary">Go to Login Page</a> -->
   </div>
   <div class="card-footer text-muted">
     <h4>WAA Course Project	-	June 2018</h4>

@@ -1,15 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome Page</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+
+<link rel="stylesheet"
+	href='<c:url value="/resources/static/css/bootstrap.min.css"/>'>
+
+
+<title>Admin Dashboard</title>
 </head>
 <body>
-	<h3>Admin Welcome ${person.firstName} </h3>
-	<a href="<c:url value="/logout" />"> Now logout </a>
+	<h3>Welcome ${person.firstName}</h3>
 
 	<hr />
 	<h2>Product</h2>
@@ -40,8 +46,11 @@
 	<h3>
 		<a href="listOrder">List of Orders</a>
 	</h3>
-	
+	<a href="<c:url value="/logout" />"> Now logout </a>
 	<hr />
 
+	<script src='<c:url value="/resources/static/js/jquery-3.3.1.min.js"/>'></script>
+	<script src='<c:url value="/resources/static/js/popper.min.js"/>'></script>
+	<script src='<c:url value="/resources/static/js/bootstrap.min.js"/>'></script>
 </body>
 </html>

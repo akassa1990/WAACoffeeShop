@@ -36,7 +36,7 @@
 						<th>Zip Code</th>
 						<!-- <th>Password</th> -->
 
-						<th><a href="#">edit</a></th>
+						<th>#</a></th>
 					</tr>
 					<c:forEach var="person" items="${persons}">
 						<tr>
