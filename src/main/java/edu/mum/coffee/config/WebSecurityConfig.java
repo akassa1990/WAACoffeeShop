@@ -24,8 +24,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Override
     protected void configure(HttpSecurity http) throws Exception {
-		/*http.sessionManagement()
- 			.sessionCreationPolicy(SessionCreationPolicy.STATELESS);*/
         http
             .authorizeRequests()
                 .antMatchers("/", "/home", "/index").permitAll()
@@ -46,8 +44,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 		
-		auth.userDetailsService(userDetailsService)
-		.passwordEncoder(new PasswordEncoder() {
+		auth.userDetailsService(userDetailsService);
+		/*.passwordEncoder(new PasswordEncoder() {
 
 			@Override
 			public String encode(CharSequence charseq) {
@@ -61,7 +59,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				return true;
 			}
 			
-		});
+		});*/
 		
 		
 //		auth.inMemoryAuthentication().withUser("akassa@mum.edu").password("pw").roles("ADMIN");

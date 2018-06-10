@@ -67,7 +67,7 @@ public class UserController {
 	public String saveOrder(@RequestParam("productname") String productname,
 			@RequestParam("desciption") String desciption,@RequestParam("quantity") String quantity, HttpSession session) {
 		System.out.println("the quantity is: "+quantity);
-		int qty=Integer.parseInt(quantity);
+		int qty=quantity.charAt(0)-48;
 
 		List<Product> products = productService.getAllProduct();
 		Product p = null;
